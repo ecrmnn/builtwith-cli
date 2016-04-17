@@ -29,6 +29,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "builtwith": "^1.0.0"
+    "builtwith": "^1.0.0",
+    "commander": "^2.9.0"
   }
 }
