@@ -8,8 +8,11 @@ describe('Analyze GitHub.com Tech Profile', function () {
   let res;
 
   before(function (done) {
-    execa.shell('node ./index github.com').then(result => {
+    execa.shell('node ./index.js github.com').then(result => {
       res = result.stdout;
+      done();
+    }).catch(error => {
+      console.log(error);
       done();
     });
   });
@@ -25,8 +28,11 @@ describe('Analyze WordPress.org Tech Profile', function () {
   let res;
 
   before(function (done) {
-    execa.shell('node ./index wordpress.org').then(result => {
+    execa.shell('node ./index.js wordpress.org').then(result => {
       res = result.stdout;
+      done();
+    }).catch(error => {
+      console.log(error);
       done();
     });
   });
@@ -42,8 +48,11 @@ describe('Analyze Laravel.com Tech Profile', function () {
   let res;
 
   before(function (done) {
-    execa.shell('node ./index laravel.com').then(result => {
+    execa.shell('node ./index.js laravel.com').then(result => {
       res = result.stdout;
+      done();
+    }).catch(error => {
+      console.log(error);
       done();
     });
   });
