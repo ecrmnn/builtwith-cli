@@ -1,0 +1,32 @@
+{
+  "name": "builtwith-cli",
+  "version": "1.0.0",
+  "description": "Tech profile lookup CLI with data from BuiltWith.com",
+  "bin": {
+    "bw": "index.js"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecrmnn/builtwith-cli"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Daniel Eckermann",
+    "email": "danieleckermann@gmail.com",
+    "url": "http://danieleckermann.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecrmnn/builtwith-cli/issues"
+  },
+  "homepage": "https://github.com/ecrmnn/builtwith-cli",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "execa": "^0.2.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {}
+}
